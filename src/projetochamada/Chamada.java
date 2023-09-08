@@ -9,51 +9,44 @@ package projetochamada;
  * @author guilherme.silva
  */
 public class Chamada {
+
     private String codigo;
     private String turma;
     private String nomealuno;
-    
-    public Chamada(String codigo,String turma,String nomealuno)
-    {
+
+    public Chamada(String codigo, String turma, String nomealuno) {
         this.codigo = codigo;
         this.turma = turma;
         this.nomealuno = nomealuno;
     }
-    
-    public String getCodigo()
-    {
+
+    public String getCodigo() {
         return codigo;
     }
-    
-    public void setCodigo(String codigo)
-    {
+
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    
-    public String getTurma()
-    {
+
+    public String getTurma() {
         return turma;
     }
-    
-    public void setTurma(String turma)
-    {
+
+    public void setTurma(String turma) {
         this.turma = turma;
     }
-    
-    public String getNomeAluno()
-    {
+
+    public String getNomeAluno() {
         return nomealuno;
     }
-    
-    public void setNomeAluno(String nomealuno)
-    {
+
+    public void setNomeAluno(String nomealuno) {
         this.nomealuno = nomealuno;
     }
-    
-    public String toString()
-    {
-        return "Codigo do aluno :" + this.codigo + "Turma :" + this.turma +
-                "Nome do Aluno : " + this.nomealuno;
+
+    public String toString() {
+        return "Codigo do aluno :" + this.codigo + "Turma :" + this.turma
+                + "Nome do Aluno : " + this.nomealuno;
     }
 
     void Add(Chamada chamada) {

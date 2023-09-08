@@ -3,26 +3,26 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package projetochamada;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 /**
  *
  * @author guilherme.silva
  */
 public class EntradaDados {
+
     Scanner leitor;
-    public EntradaDados()
-            {
-                leitor = new Scanner(System.in);
-            }
-    public int LerInteiro(String mensagem)
-    {
+
+    public EntradaDados() {
+        leitor = new Scanner(System.in);
+    }
+
+    public int LerInteiro(String mensagem) {
         String aux;
         int n = 0;
         boolean ok;
-        do
-        {
+        do {
             ok = true;
             System.out.println(mensagem);
             aux = leitor.next();
@@ -34,17 +34,15 @@ public class EntradaDados {
             if (!ok) {
                 System.out.println("Valor inválido");
             }
-        }while(!ok);
+        } while (!ok);
         return n;
     }
-    
-    public double LerDouble(String mensagem)
-    {
+
+    public double LerDouble(String mensagem) {
         String aux;
         double n = 0;
         boolean ok;
-        do
-        {
+        do {
             ok = true;
             System.out.println(mensagem);
             aux = leitor.next();
@@ -56,11 +54,11 @@ public class EntradaDados {
             if (!ok) {
                 System.out.println("Valor inválido");
             }
-        }while(!ok);
+        } while (!ok);
         return n;
     }
-    public String LerString(String mensagem)
-    {
+
+    public String LerString(String mensagem) {
         String aux;
         System.out.println(mensagem);
         aux = leitor.next();
